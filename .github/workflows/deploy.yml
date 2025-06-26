@@ -24,7 +24,7 @@ jobs:
           POSTGRES_USER: ecopick_user
           POSTGRES_PASSWORD: ecopick!!
         ports:
-          - 5432:5432
+          - postgres:5432
         options: >-
           --health-cmd ="pg_isready -d ecopick"
           --health-interval=10s
