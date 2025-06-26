@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: eco-pick-server
+  AZURE_WEBAPP_NAME: ecopickserver
   JAVA_VERSION: '17'
 
 
@@ -73,6 +73,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-                app-name: eco-pick-server
+                app-name: ecopickserver
                 slot-name: 'production'
                 package: '*.jar'
