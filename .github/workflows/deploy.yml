@@ -26,7 +26,7 @@ jobs:
         ports:
           - 5432:5432
         options: >-
-          --health-cmd ="pg_isready -d ecopick"
+          --health-cmd ="pg_isready -U ecopick_user -d ecopick"
           --health-interval=10s
           --health-timeout=10s
           --health-retries=5
